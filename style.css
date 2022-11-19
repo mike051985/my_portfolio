@@ -123,6 +123,8 @@ nav ul li {
 .bio p {
     line-height: var(--line-height);
     padding: 0.3rem 0;
+    font-size: 1.25rem;
+    text-align: justify;
 }
 
 /* More About */
@@ -140,6 +142,16 @@ nav ul li {
 .more-about p {
     line-height: var(--line-height);
     padding: 0.4rem;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+.more-about a {
+    color: #000000;
+    text-decoration: underline;
 }
 
 /* Skills */
@@ -222,6 +234,11 @@ nav ul li {
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
     margin: 10px;
+}
+
+.project-link {
+    margin-bottom: var(--bottom-margin);
+    font-weight: 700;
 }
 
 
@@ -388,6 +405,10 @@ footer {
 
     .bio {
         width: 18.3rem;
+    }
+
+    .more-about p {
+        text-align: left;
     }
 
     .icon {
