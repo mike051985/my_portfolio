@@ -366,6 +366,10 @@ footer {
         width: 20.5rem;
     }
 
+    .bio h2 {
+        text-align: center;
+    }
+
     .more-about {
         margin-top: 2rem;
         padding: 1rem 3.5rem;
@@ -408,8 +412,16 @@ footer {
         width: 18.3rem;
     }
 
+    .bio h2 {
+        text-align: center;
+    }
+
+    .bio p {
+        text-align: center;
+    }
+
     .more-about p {
-        text-align: left;
+        text-align: center;
     }
 
     .icon {
