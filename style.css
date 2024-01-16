@@ -9,12 +9,20 @@
   --bg-color: #fcfcfc;
   --primary-color: #4756df;
   --secondary-color: #ff7235;
+  --third-color: #000106;
+  --second-bg-color: #ffffff;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
+}
+
+.dark-theme {
+    --bg-color: #000106;
+    --second-bg-color: #828ff0;
+    --third-color: #fcfcfc;
 }
 /* Variables end */
 
@@ -27,6 +35,16 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 1.5em;
+}
+
+nav ul {
+    margin-left: auto;
 }
 
 ul {
@@ -44,6 +62,8 @@ a:hover {
 
 body {
     font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--third-color);
 }
 
 /* Navbar */
@@ -228,7 +248,7 @@ nav ul li {
 }
 
 .project-card {
-    background-color: #fff;
+    background-color: var(--second-bg-color);
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
@@ -347,6 +367,10 @@ footer {
         transform: translateX(0);
     }
 
+    #icon {
+        margin-left: 15em;
+    }
+
     .hero {
         margin-top: -4rem;
         flex-direction: column;
@@ -400,7 +424,10 @@ footer {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
+    #icon {
+        margin-left: 3em;
+    }
     .hero img {
         height: 15.5rem;
         width: 20rem;

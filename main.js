@@ -28,3 +28,14 @@ scrollUp.addEventListener("click", () => {
         behavior: "smooth",
     });
 });
+
+// dark theme
+let icon = document.getElementById("icon");
+icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")) {
+        icon.src = "https://i.postimg.cc/jjNq71PL/sun.png"
+    } else {
+       icon.src = "https://i.postimg.cc/prVKPLZH/moon.png"
+   }
+}
