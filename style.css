@@ -19,9 +19,10 @@
   --transition: 0.3s;
 }
 
+/* Dark theme */
 .dark-theme {
     --bg-color: #000106;
-    --second-bg-color: #828ff0;
+    --second-bg-color: #98c1d9;
     --third-color: #fcfcfc;
 }
 /* Variables end */
@@ -29,6 +30,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 
 /* CSS Resets */
 * {
@@ -66,6 +68,7 @@ body {
     color: var(--third-color);
 }
 
+
 /* Navbar */
 nav {
     position: sticky;
@@ -94,6 +97,10 @@ nav a:hover {
     border-bottom: 2px solid var(--secondary-color);
 }
 
+nav h1 a:hover {
+    border-bottom: none;
+}
+
 nav ul {
     display: flex;
     gap: 1.9rem;
@@ -112,6 +119,7 @@ nav ul li {
     display: none;
 }
 
+
 /* Hero */
 .hero {
     display: flex;
@@ -125,13 +133,13 @@ nav ul li {
 .hero img {
     height: 25.5rem;
     width: 47.5rem;
-    margin-top: 3rem;
+    margin-top: 3em;
     border-radius: 6px;
 }
 
 .bio {
     width: 25rem;
-    padding: 0.625rem;
+    padding: 0.625em;
     border-radius: 6px;
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
@@ -142,15 +150,16 @@ nav ul li {
 
 .bio p {
     line-height: var(--line-height);
-    padding: 0.3rem 0;
+    padding: 0.3em 0;
     font-size: 1.25rem;
 }
+
 
 /* More About */
 .more-about {
     background-color: var(--bg-color);
-    padding: 1rem 6rem;
-    margin-top: 3rem;
+    padding: 1em 6em;
+    margin-top: 3em;
 }
 
 .more-about h2 {
@@ -160,7 +169,7 @@ nav ul li {
 
 .more-about p {
     line-height: var(--line-height);
-    padding: 0.4rem;
+    padding: 0.4em;
     width: 80%;
     margin: 0 auto;
     overflow: hidden;
@@ -172,20 +181,21 @@ nav ul li {
     text-decoration: underline;
 }
 
+
 /* Skills */
 .skills {
     max-width: 68.75rem;
     margin: auto;
     text-align: center;
-    margin-top: 2.5rem;
+    margin-top: 2.5em;
 }
 
 .skill-header {
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
 .skills-wrapper img {
-    padding: 1.25rem;
+    padding: 1.25em;
 }
 
 .icon {
@@ -200,6 +210,7 @@ nav ul li {
     padding: 20px;
     margin: 10px;
 }
+
 
 /* Projects */
 .projects {
@@ -280,7 +291,7 @@ nav ul li {
 }
 
 .contact p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center;
     margin-bottom: var(--bottom-margin-2);
 }
@@ -298,8 +309,9 @@ nav ul li {
 
 .contact-links a:hover,
 .contact-links a:focus {
-    color: #cccccc;
+    color: var(--secondary-color);
 }
+
 
 /* Social Accounts */
 .socials {
@@ -314,6 +326,7 @@ nav ul li {
     font-size: 3rem;
 }
 
+
 /* Scroll to up */
 .scroll-up {
     position: fixed;
@@ -327,10 +340,11 @@ nav ul li {
     height: 3rem;
 }
 
+
 /* Footer */
 footer {
     background-color: var(--bg-color);
-    padding: 1.25rem;
+    padding: 1.25em;
     text-align: center;
     margin: 2rem 0 0;
 }
@@ -384,7 +398,7 @@ footer {
         }
     
     .bio {
-        margin-top: 5rem;
+        margin-top: 5em;
         width: 20.5rem;
     }
 
@@ -392,18 +406,22 @@ footer {
         text-align: center;
     }
 
+    .bio p {
+        font-size: 1.2rem;
+    }
+
     .more-about {
-        margin-top: 2rem;
-        padding: 1rem 3.5rem;
+        margin-top: 2em;
+        padding: 1em 3.5em;
     }
     
     .more-about h2 {
         text-align: center;
     }
-    /*
+    
     .more-about p {
-        text-align: justify;
-    }*/
+        font-size: 1.2rem;
+    }
 
     .icon {
         width: 5.875rem;
@@ -425,6 +443,7 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
+/*changes reflects on screen with a width of 450px and below*/
     #icon {
         margin-left: 3em;
     }
@@ -442,10 +461,6 @@ footer {
     }
 
     .bio p {
-        text-align: center;
-    }
-
-    .more-about p {
         text-align: center;
     }
 
