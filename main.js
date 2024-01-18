@@ -36,7 +36,7 @@ icon.onclick = function(){
     if(document.body.classList.contains("dark-theme")) {
         icon.src = "https://i.postimg.cc/jjNq71PL/sun.png"
     } else {
-        icon.src = "https://i.postimg.cc/prL7CxXK/moon.png"
+        icon.src = "https://i.postimg.cc/yY8JkM99/moon-icon-0.png"
     }
 }
 
