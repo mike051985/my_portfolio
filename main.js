@@ -34,9 +34,11 @@ const icon = document.getElementById("icon");
 icon.onclick = function(){
     document.body.classList.toggle("dark-theme");
     if(document.body.classList.contains("dark-theme")) {
-        icon.src = "https://i.postimg.cc/jjNq71PL/sun.png"
+        icon.classList = "fas fa-sun"  
+        nav.style.boxShadow = "0 3px 5px var(--fourth-shadow)"
     } else {
-        icon.src = "https://i.postimg.cc/ZnHSkYLq/moon.png"
+        icon.classList = "fas fa-moon" 
+        nav.style.boxShadow = "0 3px 5px var(--third-shadow)"
     }
 }
 

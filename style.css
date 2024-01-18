@@ -2,21 +2,22 @@
 
 /* Variables */
 :root {
-  --font-family: "Roboto", sans-serf;
-  --normal-font: 400;
-  --bold-font: 700;
-  --bolder-font: 900;
-  --bg-color: #fcfcfc;
-  --primary-color: #4756df;
-  --secondary-color: #ff7235;
-  --third-color: #000106;
-  --second-bg-color: #ffffff;
-  --primary-shadow: #8b8eaf;
-  --secondary-shadow: #a17a69;
-  --bottom-margin: 0.5rem;
-  --bottom-margin-2: 1rem;
-  --line-height: 1.7rem;
-  --transition: 0.3s;
+    --font-family: "Roboto", sans-serf;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfc;
+    --primary-color: #4756df;
+    --secondary-color: #ff7235;
+    --third-color: #000106;
+    --second-bg-color: #ffffff;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --third-shadow: #3D3B40;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
 }
 
 /* Dark theme */
@@ -24,11 +25,12 @@
     --bg-color: #000106;
     --second-bg-color: #98c1d9;
     --third-color: #fcfcfc;
+    --fourth-shadow:#fcfcfc;
 }
 /* Variables end */
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 
@@ -80,7 +82,7 @@ nav {
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
     background-color: var(--bg-color);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px var(--third-shadow);
 }
 
 nav h1 {
